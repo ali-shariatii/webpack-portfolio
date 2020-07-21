@@ -578,7 +578,5 @@ $(document).ready(function() {
 
     /* SECTION 5: CONTACT */
 
-    /* SECTION 6: FOOTER */
-
 
 });

@@ -17,7 +17,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="fonts/FuturaPTBook.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="./assets/fonts/FuturaPTBook.otf" as="font" type="font/otf" crossorigin>
     <meta name="description" content="I am a web developer & designer with an interest and passion in building web applications and websites. My main focus is mostly on front-end side.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -32,9 +32,9 @@
         <!--NAVIGATION-->
         <div id="nav-grid" class="hidden-fixed-nav shadow-filter-effect">
             <div id="nav-item-1">
-                <audio id="bgMusic" src="snd/bg-music.mp3" loop></audio>
+                <audio id="bgMusic" src="./assets/snd/bg-music.mp3" loop></audio>
                 <div id="ctrl-container">
-                    <div id="musicBtn" onclick="toggleMusic();"></div>
+                    <div id="musicBtn"></div>
                 </div>
             </div>
             <div id="nav-item-2">
@@ -121,16 +121,16 @@
         <header id="home-grid">
             <div id="header-grid-shade">
                 <div id="header-grid-item">
-                    <h1><a href="#about-grid" class="header-logo-position logoPointer"><img src="img/logo.svg" alt="A" id="logo1"></a><div class="name-letters">LI SH</div><a href="#contact-grid" class="header-logo-position logoPointer"><img src="img/logo.svg" alt="A" id="logo2"></a><div class="name-letters">RIATI</div></h1>
+                    <h1><a href="#about-grid" class="header-logo-position logoPointer"><img src="./assets/img/logo.svg" alt="A" id="logo1"></a><div class="name-letters">LI SH</div><a href="#contact-grid" class="header-logo-position logoPointer"><img src="./assets/img/logo.svg" alt="A" id="logo2"></a><div class="name-letters">RIATI</div></h1>
                     <h3>WEB DEVELOPER | WEB DESIGNER</h3>
                 </div>
             </div>
-            <img src="img/sky-city-1.png" alt="sky-city" class="sky-city-land" id="sky-city-1">
-            <img src="img/sky-city-1-1200px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-1200px">
-            <img src="img/sky-city-1-992px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-992px">
-            <img src="img/sky-city-1-768px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-768px">
-            <img src="img/sky-city-1-600px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-600px">
-            <img src="img/sky-city-1-400px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-400px">
+            <img src="./assets/img/sky-city-1.png" alt="sky-city" class="sky-city-land" id="sky-city-1">
+            <img src="./assets/img/sky-city-1-1200px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-1200px">
+            <img src="./assets/img/sky-city-1-992px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-992px">
+            <img src="./assets/img/sky-city-1-768px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-768px">
+            <img src="./assets/img/sky-city-1-600px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-600px">
+            <img src="./assets/img/sky-city-1-400px.png" alt="sky-city" class="sky-city-land" id="sky-city-1-400px">
         </header>
 
         <!--SECTION 2: ABOUT-->
@@ -195,7 +195,7 @@
                         <!--modal trigger-->
                         <div class="work-img-container" id="modalOpener1">
                             <div class="info-alert">More Info</div>
-                            <img src="img/i2canada-thumbnail-wide.jpg" alt="i2canada">
+                            <img src="./assets/img/i2canada-thumbnail-wide.jpg" alt="i2canada">
                             <span>HTML | CSS | JAVASCRIPT</span>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
                         <!--modal trigger-->
                         <div class="work-img-container" id="modalOpener2">
                             <div class="info-alert">More Info</div>
-                            <img src="img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
+                            <img src="./assets/img/shiftdo-thumbnail-wide.jpg" alt="Shiftdo">
                             <span>HTML | CSS | WORDPRESS</span>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
         <!--SECTION 5: CONTACT-->
         <section class="container-grid" id="contact-container">
             <div id="contact-grid">
-                <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer"><img src="img/logo.svg" alt="A" id="logo3"></a>CT</h4></div>
+                <div id="contact-grid-item-1"><h4>CONT<a href="#home-grid" class="logoPointer"><img src="./assets/img/logo.svg" alt="A" id="logo3"></a>CT</h4></div>
                 <div id="contact-grid-item-2" class="init-scale-in">
                     <form id="form-grid" action="contactform.php" method="POST">
                         <div id="form-grid-item-1"><input type="text" placeholder="Name*" name="name" required></div>
@@ -273,12 +273,12 @@
                     </form>
                 </div>
             </div>
-            <img src="img/sky-city-2.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2">
-            <img src="img/sky-city-2-1200px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-1200px">
-            <img src="img/sky-city-2-992px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-992px">
-            <img src="img/sky-city-2-768px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-768px">
-            <img src="img/sky-city-2-600px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-600px">
-            <img src="img/sky-city-2-400px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-400px">
+            <img src="./assets/img/sky-city-2.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2">
+            <img src="./assets/img/sky-city-2-1200px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-1200px">
+            <img src="./assets/img/sky-city-2-992px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-992px">
+            <img src="./assets/img/sky-city-2-768px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-768px">
+            <img src="./assets/img/sky-city-2-600px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-600px">
+            <img src="./assets/img/sky-city-2-400px.jpg" alt="sky-city" class="sky-city-2" id="sky-city-2-400px">
         </section>
 
         <!--SECTION 6: FOOTER-->

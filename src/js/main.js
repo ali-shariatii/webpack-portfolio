@@ -7,7 +7,7 @@ var bgMusic = document.getElementById("bgMusic"),
     musicBtn = document.getElementById("musicBtn"),
     music = false;
 
-function toggleMusic() {
+musicBtn.onclick = function() {
     if (music) {
         bgMusic.pause()
     } else {

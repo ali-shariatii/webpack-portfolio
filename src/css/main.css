@@ -19,16 +19,16 @@ html {
     overflow: hidden;
 }
 
-/*@font-face {
+@font-face {
     font-family: futura-pt;
-    src: url(../fonts/FuturaPTBook.otf);
+    src: url(../assets/fonts/FuturaPTBook.otf);
     font-display: swap;
 }
 
 * {
     font-family: futura-pt, sans-serif;
     color: white;
-}*/
+}
 
 #content-wrapper {
     display: grid;
