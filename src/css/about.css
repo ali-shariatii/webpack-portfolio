@@ -1,0 +1,114 @@
+  /*                          SECTION 2: ABOUT */
+  
+  #about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      background-color: #393939;
+      padding-bottom: 4.8rem;
+      z-index: 2;
+  }
+  
+  #about-grid-item-1 {
+      display: grid;
+      justify-content: space-evenly;
+  }
+  
+  #about-grid-item-2 {
+      display: grid;
+      grid-template-columns: repeat(3, 28%);
+      grid-auto-columns: 28%;
+      grid-template-rows: auto;
+      justify-content: space-evenly;
+      align-items: stretch;
+  }
+  
+  #highlights-grid-item-1,
+  #highlights-grid-item-2,
+  #highlights-grid-item-3 {
+      display: grid;
+      justify-content: space-evenly;
+      align-items: stretch;
+  }
+  
+  #highlight-content-container-1,
+  #highlight-content-container-2,
+  #highlight-content-container-3 {
+      display: grid;
+      justify-content: space-evenly;
+      align-items: center;
+      border: white solid .12rem;
+      text-align: center;
+      padding: 0 .8rem;
+      box-shadow: 0 .16rem .32rem 0 rgba(11, 11, 11, 0.7), 0 .36rem .4rem 0 rgba(14, 14, 14, 0.6);
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+  }
+  
+  #about-grid-item-3 {
+      padding: 2rem 6.18vw 0 6.18vw;
+  }
+  
+  #about-grid-item-3 p {
+      text-align: center;
+  }
+  
+  #about-grid-item-3 a {
+      color: #1676b6;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  #about-grid-item-4 {
+      display: grid;
+      grid-template-columns: repeat(3, 20%);
+      grid-auto-columns: 20%;
+      justify-content: center;
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 1.4rem;
+      padding-top: 2rem;
+  }
+  
+  .skills-items {
+      align-items: center;
+      text-align: center;
+      display: grid;
+      justify-content: space-evenly;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+  }
+  /*hover transitions*/
+  
+  #highlight-content-container-1:hover,
+  #highlight-content-container-2:hover,
+  #highlight-content-container-3:hover,
+  #highlight-content-container-1:focus,
+  #highlight-content-container-2:focus,
+  #highlight-content-container-3:focus {
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      transform: scale(1.02);
+  }
+  
+  .skills-items:hover,
+  .skills-items:focus {
+      letter-spacing: .076rem;
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      transform: scale(1.03);
+  }
+  
+  .skills-items:hover span,
+  .skills-items:focus span {
+      color: #1676b6;
+  }

@@ -1,0 +1,23 @@
+/*                  SECTION 4: TESTIMONIALS */
+
+#recom-item-1 p:hover,
+#recom-item-2 p:hover,
+#recom-item-3 p:hover,
+#recom-item-1 p:focus,
+#recom-item-2 p:focus,
+#recom-item-3 p:focus {
+    -webkit-transform: translateX(.25rem);
+    -moz-transform: translateX(.25rem);
+    -ms-transform: translateX(.25rem);
+    -o-transform: translateX(.25rem);
+    transform: translateX(.25rem);
+}
+
+#recom-item-4:hover,
+#recom-item-4:focus {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}

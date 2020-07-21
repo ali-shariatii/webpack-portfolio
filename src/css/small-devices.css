@@ -1,0 +1,716 @@
+/* ********************************************************** extra small phones ********************************************************** */
+
+@media only screen and (min-width: 1px) and (max-width: 400px) {
+    /*******************/
+    /* GLOBAL SETTINGS */
+    /*******************/
+    html {
+        font-size: 100%;
+    }
+    h4 {
+        font-size: calc(.8 * 1.6rem);
+        margin-left: calc(.8 * .28rem);
+        letter-spacing: calc(.8 * .28rem);
+    }
+    /**************/
+    /* NAVIGATION */
+    /**************/
+    /*navigation layout for small screens*/
+    #nav-grid {
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-columns: repeat(2, 50%);
+        height: 2.2rem;
+    }
+    /*left-adjustable music button outter container*/
+    #nav-item-1 {
+        justify-content: flex-start;
+        padding-left: 11%;
+    }
+    /*middle navbar menu + right-github icon for large screens*/
+    #nav-item-2,
+    #nav-github {
+        display: none;
+    }
+    /*hamburger menu outter container*/
+    #nav-item-3 {
+        justify-content: flex-end;
+        padding-right: 11%;
+    }
+    /*hamburger menu inner container*/
+    #hamburger-menu-container {
+        display: flex;
+    }
+    /*dropdown menu*/
+    #nav-item-4 {
+        display: grid;
+    }
+    #nav-item-4 ul li {
+        font-size: 1.1rem;
+        line-height: 7vh;
+    }
+    /**********************************/
+    /* SECTION 1: HOME / LANDING PAGE */
+    /**********************************/
+    /*header size proportions for small screens*/
+    #header-grid-item h1 {
+        font-size: calc(4.2 * 2.74vw);
+        letter-spacing: calc(4.2 * .7vw);
+        font-weight: 500;
+        padding-left: calc(4.2 * .7vw);
+        padding-right: 0;
+        padding-top: 0;
+    }
+    #header-grid-item h1 a {
+        margin: 0 calc(4.2 * .7vw) 0 0;
+    }
+    #logo1,
+    #logo2 {
+        height: calc(4.2 * 1.83vw);
+    }
+    #header-grid-item h3 {
+        line-height: calc(4.2 * 3.4vw);
+        font-size: calc(4.2 * 1vw);
+        letter-spacing: calc(4.2 * .1vw);
+        margin-left: calc(4.2 * .1vw);
+        font-weight: 500;
+        margin-top: calc(4.2 * -3vw);
+    }
+    ;
+    #sky-city-1,
+    #sky-city-1-1200px,
+    #sky-city-1-992px,
+    #sky-city-1-768px,
+    #sky-city-1-600px {
+        display: none;
+    }
+    #sky-city-1-400px {
+        display: block;
+    }
+    /***********************/
+    /* SOCIAL MEDIA WINDOW */
+    /***********************/
+    #media-container {
+        display: none;
+    }
+    /********************/
+    /* SECTION 2: ABOUT */
+    /********************/
+    /*layout for small screens*/
+    #about-grid-item-2 {
+        display: grid;
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        align-items: stretch;
+        row-gap: 1.1rem;
+    }
+    #about-grid-item-3 {
+        display: grid;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+        grid-template-columns: 74%;
+        grid-auto-columns: 7%;
+    }
+    #about-grid-item-3 p {
+        text-align: center;
+    }
+    #about-grid-item-4 {
+        justify-content: space-evenly;
+    }
+    /*******************/
+    /* SECTION 3: WORK */
+    /*******************/
+    /*layout for small screens*/
+    #work-grid-item-3 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(2, auto);
+        /*add more auto after adding more work to gallery*/
+        gap: 1.1rem;
+    }
+    .modal-content-window p {
+        text-align: left;
+    }
+    /***************************/
+    /* SECTION 4: TESTIMONIALS */
+    /***************************/
+    /*layout for small screens*/
+    #testimonials-grid-item-2 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(4, auto);
+        gap: 1.1rem;
+    }
+    #recom-item-4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    /**********************/
+    /* SECTION 5: CONTACT */
+    /**********************/
+    /*layout for small screens*/
+    #form-grid {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(7, auto);
+        gap: 1.1rem;
+    }
+    #form-grid-item-5 {
+        grid-area: 5 / 1 / 7 / 2;
+    }
+    textarea {
+        min-height: 6rem;
+        resize: vertical;
+    }
+    #form-grid-item-6 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    #logo3 {
+        height: calc(.8 * 1.19rem);
+    }
+    /*confirmation of received message page*/
+    #confirmation-mesg {
+        font-size: calc(4 * 1vw);
+    }
+    #redirect-mesg {
+        font-size: calc(4 * .7vw);
+        padding-bottom: calc(4 * .2vw);
+    }
+    #logo4 {
+        height: calc(4 * 1.792vw);
+        margin-top: calc(4 * 2vw);
+    }
+    #sky-city-2-400px {
+        display: block;
+    }
+    #sky-city-2,
+    #sky-city-2-1200px,
+    #sky-city-2-992px,
+    #sky-city-2-768px,
+    #sky-city-2-600px {
+        display: none;
+    }
+}
+
+
+/* ********************************************************** portrait and landscape small and medium phones + some portrait large phones ********************************************************** */
+
+@media only screen and (min-width: 400.1px) and (max-width: 599.98px) {
+    /*******************/
+    /* GLOBAL SETTINGS */
+    /*******************/
+    html {
+        font-size: 112.8%;
+    }
+    /**************/
+    /* NAVIGATION */
+    /**************/
+    /*navigation layout for small screens*/
+    #nav-grid {
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-columns: repeat(2, 50%);
+        height: 2.2rem;
+    }
+    /*left-adjustable music button outter container*/
+    #nav-item-1 {
+        justify-content: flex-start;
+        padding-left: 11%;
+    }
+    /*middle navbar menu + right-github icon for large screens*/
+    #nav-item-2,
+    #nav-github {
+        display: none;
+    }
+    /*hamburger menu outter container*/
+    #nav-item-3 {
+        justify-content: flex-end;
+        padding-right: 11%;
+    }
+    /*hamburger menu inner container*/
+    #hamburger-menu-container {
+        display: flex;
+    }
+    /*dropdown menu*/
+    #nav-item-4 {
+        display: grid;
+    }
+    #nav-item-4 ul li {
+        font-size: 1.1rem;
+        line-height: 7vh;
+    }
+    /**********************************/
+    /* SECTION 1: HOME / LANDING PAGE */
+    /**********************************/
+    /*header size proportions for small screens*/
+    #header-grid-item h1 {
+        font-size: calc(3.53 * 2.74vw);
+        letter-spacing: calc(3.53 * 1vw);
+        font-weight: 500;
+        padding-left: calc(3.53 * 1vw);
+        padding-right: 0;
+        padding-top: 0;
+    }
+    #header-grid-item h1 a {
+        margin: 0 calc(3.53 * 1vw) 0 0;
+    }
+    #logo1,
+    #logo2 {
+        height: calc(3.53 * 1.8vw);
+    }
+    #header-grid-item h3 {
+        line-height: calc(3.53 * 3.4vw);
+        font-size: calc(3.53 * 1vw);
+        letter-spacing: calc(3.53 * .15vw);
+        margin-left: calc(3.53 * .15vw);
+        font-weight: 500;
+        margin-top: calc(3.53 * -3vw);
+    }
+    #sky-city-1,
+    #sky-city-1-1200px,
+    #sky-city-1-992px,
+    #sky-city-1-768px,
+    #sky-city-1-400px {
+        display: none;
+    }
+    #sky-city-1-600px {
+        display: block;
+    }
+    /***********************/
+    /* SOCIAL MEDIA WINDOW */
+    /***********************/
+    #media-container {
+        display: none;
+    }
+    /********************/
+    /* SECTION 2: ABOUT */
+    /********************/
+    /*layout for small screens*/
+    #about-grid-item-2 {
+        display: grid;
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        align-items: stretch;
+        row-gap: 1.1rem;
+    }
+    #about-grid-item-3 {
+        display: grid;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+        grid-template-columns: 74%;
+        grid-auto-columns: 7%;
+    }
+    #about-grid-item-3 p {
+        text-align: center;
+    }
+    #about-grid-item-4 {
+        justify-content: space-evenly;
+    }
+    /*******************/
+    /* SECTION 3: WORK */
+    /*******************/
+    /*layout for small screens*/
+    #work-grid-item-3 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(2, auto);
+        /*add more auto after adding more work to gallery*/
+        gap: 1.1rem;
+    }
+    .modal-content-window p {
+        text-align: left;
+    }
+    /***************************/
+    /* SECTION 4: TESTIMONIALS */
+    /***************************/
+    /*layout for small screens*/
+    #testimonials-grid-item-2 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(4, auto);
+        gap: 1.1rem;
+    }
+    #recom-item-4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    /**********************/
+    /* SECTION 5: CONTACT */
+    /**********************/
+    /*layout for small screens*/
+    #form-grid {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(7, auto);
+        gap: 1.1rem;
+    }
+    #form-grid-item-5 {
+        grid-area: 5 / 1 / 7 / 2;
+    }
+    textarea {
+        min-height: 6rem;
+        resize: vertical;
+    }
+    #form-grid-item-6 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    /*confirmation of received message page*/
+    #confirmation-mesg {
+        font-size: calc(3.2 * 1vw);
+    }
+    #redirect-mesg {
+        font-size: calc(3.2 * .7vw);
+        padding-bottom: calc(3.2 * .2vw);
+    }
+    #logo4 {
+        height: calc(3.2 * 1.792vw);
+        margin-top: calc(3.2 * 2vw);
+    }
+    #sky-city-2-600px {
+        display: block;
+    }
+    #sky-city-2,
+    #sky-city-2-1200px,
+    #sky-city-2-992px,
+    #sky-city-2-768px,
+    #sky-city-2-400px {
+        display: none;
+    }
+}
+
+
+/* ********************************************************** landscape medium and some large phones + portrait small tablets ********************************************************** */
+
+@media only screen and (min-width: 600px) and (max-width:767.98px) {
+    /*******************/
+    /* GLOBAL SETTINGS */
+    /*******************/
+    html {
+        font-size: 112.8%;
+    }
+    /**************/
+    /* NAVIGATION */
+    /**************/
+    /*navigation layout for small screens*/
+    #nav-grid {
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-columns: repeat(2, 50%);
+        height: 2.2rem;
+    }
+    /*left-adjustable music button outter container*/
+    #nav-item-1 {
+        justify-content: flex-start;
+        padding-left: 11%;
+    }
+    /*middle navbar menu + right-github icon for large screens*/
+    #nav-item-2,
+    #nav-github {
+        display: none;
+    }
+    /*hamburger menu outter container*/
+    #nav-item-3 {
+        justify-content: flex-end;
+        padding-right: 11%;
+    }
+    /*hamburger menu inner container*/
+    #hamburger-menu-container {
+        display: flex;
+    }
+    /*dropdown menu*/
+    #nav-item-4 {
+        display: grid;
+    }
+    #nav-item-4 ul li {
+        font-size: 1.1rem;
+        line-height: 7vh;
+    }
+    /**********************************/
+    /* SECTION 1: HOME / LANDING PAGE */
+    /**********************************/
+    /*header size proportions for small screens*/
+    #header-grid-item h1 {
+        font-size: calc(.955 * 2.74rem);
+        letter-spacing: calc(.955 * 1.4rem);
+        font-weight: 500;
+        padding-left: calc(.955 * 1.4rem);
+        padding-right: 0;
+        padding-top: 0;
+    }
+    #header-grid-item h1 a {
+        margin: 0 calc(.955 * 1.4rem) 0 0;
+    }
+    #logo1,
+    #logo2 {
+        height: calc(.955 * 1.865rem);
+    }
+    #header-grid-item h3 {
+        line-height: calc(.955 * 3.4rem);
+        font-size: calc(.955 * 1.1rem);
+        letter-spacing: calc(.955 * .4rem);
+        margin-left: calc(.955 * .4rem);
+        font-weight: 500;
+        margin-top: calc(.955 * -3rem);
+    }
+    #sky-city-1,
+    #sky-city-1-1200px,
+    #sky-city-1-992px,
+    #sky-city-1-600px,
+    #sky-city-1-400px {
+        display: none;
+    }
+    #sky-city-1-768px {
+        display: block;
+    }
+    /***********************/
+    /* SOCIAL MEDIA WINDOW */
+    /***********************/
+    #media-container {
+        display: none;
+    }
+    /********************/
+    /* SECTION 2: ABOUT */
+    /********************/
+    /*layout for small screens*/
+    #about-grid-item-2 {
+        display: grid;
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(3, auto);
+        justify-content: space-evenly;
+        align-items: stretch;
+        row-gap: 1.1rem;
+    }
+    #about-grid-item-3 {
+        display: grid;
+        justify-content: center;
+        padding: 2rem 0 0 0;
+        grid-template-columns: 74%;
+        grid-auto-columns: 7%;
+    }
+    #about-grid-item-3 p {
+        text-align: center;
+    }
+    #about-grid-item-4 {
+        justify-content: space-evenly;
+    }
+    /*******************/
+    /* SECTION 3: WORK */
+    /*******************/
+    /*layout for small screens*/
+    #work-grid-item-3 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(2, auto);
+        /*add more auto after adding more work to gallery*/
+        gap: 1.1rem;
+    }
+    .modal-content-window p {
+        text-align: left;
+    }
+    /***************************/
+    /* SECTION 4: TESTIMONIALS */
+    /***************************/
+    /*layout for small screens*/
+    #testimonials-grid-item-2 {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(4, auto);
+        gap: 1.1rem;
+    }
+    #recom-item-4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    /**********************/
+    /* SECTION 5: CONTACT */
+    /**********************/
+    /*layout for small screens*/
+    #form-grid {
+        grid-template-columns: 81%;
+        grid-auto-columns: 81%;
+        grid-template-rows: repeat(7, auto);
+        gap: 1.1rem;
+    }
+    #form-grid-item-5 {
+        grid-area: 5 / 1 / 7 / 2;
+    }
+    textarea {
+        min-height: 6rem;
+        resize: vertical;
+    }
+    #form-grid-item-6 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+    /*confirmation of received message page*/
+    #confirmation-mesg {
+        font-size: calc(2.7 * 1vw);
+    }
+    #redirect-mesg {
+        font-size: calc(2.7 * .7vw);
+        padding-bottom: calc(2.7 * .2vw);
+    }
+    #logo4 {
+        height: calc(2.7 * 1.792vw);
+        margin-top: calc(2.7 * 2vw);
+    }
+    #sky-city-2-768px {
+        display: block;
+    }
+    #sky-city-2,
+    #sky-city-2-1200px,
+    #sky-city-2-992px,
+    #sky-city-2-600px,
+    #sky-city-2-400px {
+        display: none;
+    }
+}
+
+
+/* ********************************************************** landscape large phones + portrait medium tablets ********************************************************** */
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    /*******************/
+    /* GLOBAL SETTINGS */
+    /*******************/
+    html {
+        font-size: 112.8%;
+    }
+    /**************/
+    /* NAVIGATION */
+    /**************/
+    /*navigation layout for small screens*/
+    #nav-grid {
+        grid-template-columns: repeat(2, 50%);
+        grid-auto-columns: repeat(2, 50%);
+        height: 2.4rem;
+    }
+    /*left-adjustable music button outter container*/
+    #nav-item-1 {
+        justify-content: flex-start;
+        padding-left: 11%;
+    }
+    /*middle navbar menu + right-github icon for large screens*/
+    #nav-item-2,
+    #nav-github {
+        display: none;
+    }
+    /*hamburger menu outter container*/
+    #nav-item-3 {
+        justify-content: flex-end;
+        padding-right: 11%;
+    }
+    /*hamburger menu inner container*/
+    #hamburger-menu-container {
+        display: flex;
+    }
+    /*dropdown menu*/
+    #nav-item-4 {
+        display: grid;
+    }
+    #nav-item-4 ul li {
+        font-size: 1.1rem;
+        line-height: 7vh;
+    }
+    /**********************************/
+    /* SECTION 1: HOME / LANDING PAGE */
+    /**********************************/
+    #sky-city-1,
+    #sky-city-1-1200px,
+    #sky-city-1-768px,
+    #sky-city-1-600px,
+    #sky-city-1-400px {
+        display: none;
+    }
+    #sky-city-1-992px {
+        display: block;
+    }
+    /***********************/
+    /* SOCIAL MEDIA WINDOW */
+    /***********************/
+    #media-container {
+        display: none;
+    }
+    /**********************/
+    /* SECTION 5: CONTACT */
+    /**********************/
+    /*confirmation of received message page*/
+    #confirmation-mesg {
+        font-size: calc(2.1 * 1vw);
+    }
+    #redirect-mesg {
+        font-size: calc(2.1 * .7vw);
+        padding-bottom: calc(2.1 * .2vw);
+    }
+    #logo4 {
+        height: calc(2.1 * 1.792vw);
+        margin-top: calc(2.1 * 2vw);
+    }
+    #sky-city-2-992px {
+        display: block;
+    }
+    #sky-city-2,
+    #sky-city-2-1200px,
+    #sky-city-2-768px,
+    #sky-city-2-600px,
+    #sky-city-2-400px {
+        display: none;
+    }
+}
+
+
+/* ********************************************************** portrait large tablets + medium landscape tablets + medium to large laptops ********************************************************** */
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    /*******************/
+    /* GLOBAL SETTINGS */
+    /*******************/
+    html {
+        font-size: 112.8%;
+    }
+    /**********************************/
+    /* SECTION 1: HOME / LANDING PAGE */
+    /**********************************/
+    #sky-city-1,
+    #sky-city-1-992px,
+    #sky-city-1-768px,
+    #sky-city-1-600px,
+    #sky-city-1-400px {
+        display: none;
+    }
+    #sky-city-1-1200px {
+        display: block;
+    }
+    /***********************/
+    /* SOCIAL MEDIA WINDOW */
+    /***********************/
+    #media-window li {
+        line-height: 1.5rem;
+    }
+    #media-container {
+        top: 44vh;
+    }
+    /**********************/
+    /* SECTION 5: CONTACT */
+    /**********************/
+    /*confirmation of received message page*/
+    #confirmation-mesg {
+        font-size: calc(1.8 * 1vw);
+    }
+    #redirect-mesg {
+        font-size: calc(1.8 * .7vw);
+        padding-bottom: calc(1.8 * .2vw);
+    }
+    #logo4 {
+        height: calc(1.8 * 1.792vw);
+        margin-top: calc(1.8 * 2vw);
+    }
+    #sky-city-2-1200px {
+        display: block;
+    }
+    #sky-city-2,
+    #sky-city-2-992px,
+    #sky-city-2-768px,
+    #sky-city-2-600px,
+    #sky-city-2-400px {
+        display: none;
+    }
+}

@@ -1,0 +1,337 @@
+/*SECTION 5: CONTACT */
+
+#contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    background-color: #2e2e2e;
+    padding-bottom: 4.8rem;
+    overflow: hidden;
+    border-top: .5 solid #393939;
+}
+
+.sky-city-2 {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    ;
+    height: auto;
+    margin-top: -10px;
+}
+
+#sky-city-2 {
+    display: block;
+}
+
+#sky-city-2-1200px,
+#sky-city-2-992px,
+#sky-city-2-768px,
+#sky-city-2-600px,
+#sky-city-2-400px {
+    display: none;
+}
+
+#contact-grid-item-1 {
+    z-index: 2;
+    display: grid;
+    justify-content: center;
+}
+
+#logo3 {
+    display: inline-block;
+    width: auto;
+    height: 1.19rem;
+    margin: 0 .24rem -.07rem 0;
+    cursor: pointer;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#logo3:hover,
+#logo3:focus {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+#contact-grid-item-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 43.27%);
+    grid-auto-columns: 43.27% 43.27%;
+    grid-template-rows: repeat(4, auto);
+    gap: 1.06rem;
+    justify-content: center;
+    font-size: .92rem;
+    letter-spacing: .04rem;
+}
+
+#form-grid textarea,
+#form-grid input,
+#form-grid button {
+    background-color: #393939;
+    color: white;
+    border: none;
+}
+
+#form-grid textarea,
+#form-grid input {
+    padding: .8rem .76rem;
+}
+
+#form-grid-item-1,
+#form-grid-item-2,
+#form-grid-item-3,
+#form-grid-item-4 {
+    display: grid;
+    align-content: stretch;
+}
+
+#form-grid-item-5 {
+    display: grid;
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+textarea {
+    resize: none;
+}
+
+#form-grid-item-6 {
+    display: grid;
+    justify-content: space-evenly;
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+#form-grid-item-6 button {
+    font-size: .92rem;
+    letter-spacing: 0;
+    font-weight: normal;
+    padding: .28rem .6rem .16rem .6rem;
+    background-color: transparent;
+    border: white .08rem solid;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#form-grid-item-6 button:hover,
+#form-grid-item-6 button:focus {
+    border: grey .08rem solid;
+    letter-spacing: .05rem;
+    color: grey;
+}
+
+#form-grid-item-6 button:active {
+    font-size: .92rem;
+    border: #1676b6 .08rem solid;
+    letter-spacing: 0;
+    color: #1676b6;
+}
+
+
+/*form submission message page style*/
+
+#message-grid-item {
+    text-align: center;
+}
+
+
+/* resets y axis of sky-city images*/
+
+.sky-city-y-reset {
+    position: absolute;
+    bottom: 0px;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+#confirmation-mesg {
+    position: relative;
+    margin: 0;
+    animation: slideLeft ease 1s;
+    z-index: 3;
+}
+
+@-webkit-keyframes slideLeft {
+    from {
+        transform: translateX(-1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@-moz-keyframes slideLeft {
+    from {
+        transform: translateX(-1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@-o-keyframes slideLeft {
+    from {
+        transform: translateX(-1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+#redirect-mesg {
+    position: relative;
+    font-size: .7rem;
+    padding-bottom: .2rem;
+    animation: slideRight ease 1s;
+    z-index: 3;
+}
+
+@-webkit-keyframes slideRight {
+    from {
+        transform: translateX(1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@-moz-keyframes slideRight {
+    from {
+        transform: translateX(1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@-o-keyframes slideRight {
+    from {
+        transform: translateX(1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(1rem);
+        color: transparent;
+    }
+    to {
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+#message-grid-item p a,
+#message-grid-item p a:visited,
+#message-grid-item p a:hover,
+#message-grid-item p a:focus,
+#message-grid-item p a:hover,
+#message-grid-item p a:active {
+    text-decoration: none;
+    color: #1676b6;
+}
+
+#logo4 {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 1.792rem;
+    margin-top: 2rem;
+    z-index: 3;
+    -webkit-animation: spin 2s infinite ease;
+    -moz-animation: spin 2s infinite ease;
+    -o-animation: spin 2s infinite ease;
+    animation: spin 2s infinite ease;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(720deg);
+    }
+}
+
+
+/*auto fill input color sets*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1.2rem #393939 inset !important;
+    box-shadow: 0 0 0 1.2rem #393939 inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}

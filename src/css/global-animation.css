@@ -1,0 +1,90 @@
+/*ABOUT */
+
+
+/* #about-grid-item-1 h4 > .left-slide-in */
+
+
+/* #highlights-grid-item-$ > .x-rotate */
+
+
+/* #about-grid-item-3 p > .appear-in */
+
+
+/* .skills-items span > .appear-in */
+
+
+/*WORK */
+
+
+/* #work-grid-item-1 h4 > .left-slide-in */
+
+
+/* #gallery-grid-item-$ > .scale-in */
+
+
+/*TESTIMOIALS */
+
+
+/* #testimonials-grid-item-1 h4 > .left-slide-in */
+
+
+/* #recom-item-$ > .x-rotate */
+
+
+/* #recom-item-4 p > .appear-in */
+
+
+/*CONTACT */
+
+
+/* #contact-grid-item-1 h4 > .left-slide-in */
+
+
+/* #contact-grid-item-2 > .scale-in */
+
+
+/*GLOBAL ON-SCROLL ANIMATION*/
+
+.init-scale-in {
+    opacity: 0;
+    -webkit-transition: all ease .6s;
+    -moz-transition: all ease .6s;
+    -o-transition: all ease .6s;
+    transition: all ease .6s;
+    transform: scale(.85);
+}
+
+.init-appear-in {
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+    opacity: 0;
+}
+
+.left-slide-in {
+    opacity: 1;
+    -webkit-transition: all .45s ease-out;
+    -moz-transition: all .45s ease-out;
+    -o-transition: all .45s ease-out;
+    transition: all .45s ease-out;
+    transition: all .45s ease-out;
+    transform: translateX(0vw);
+}
+
+.scale-in {
+    opacity: 1;
+    -webkit-transition: all ease .6s;
+    -moz-transition: all ease .6s;
+    -o-transition: all ease .6s;
+    transition: all ease .6s;
+    transform: scale(1);
+}
+
+.appear-in {
+    -webkit-transition: all ease .8s;
+    -moz-transition: all ease .8s;
+    -o-transition: all ease .8s;
+    transition: all ease .8s;
+    opacity: 1;
+}
