@@ -3,15 +3,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
-    plugins: [new HtmlWebpackPlugin({
-        template: "./src/template.html"
-    })],
     module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"], //order matter. also the one with the highest index loads first. in this case css-loader
-            },
             {
                 test: /\.html$/i,
                 use: ["html-loader"]
@@ -27,11 +20,11 @@ module.exports = {
                 }
             },
             {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                test: /\.(woff|woff2|eot|ttf|otf|jpe?g)$/,
                 use:  {                   
                     loader: "file-loader",
                     options: {
-                        name: "[name].[ext]",
+                        name: "[name].[hash].[ext]",
                         outputPath: "assets/fonts"
                     }
                 }
