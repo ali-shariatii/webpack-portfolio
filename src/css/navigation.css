@@ -80,13 +80,13 @@
     background-color: rgba(46, 46, 46, 0.98);
 }
 
-#nav-item-1 {
+/*#nav-item-1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*music player controllers*/
+music player controllers
 #musicBtn {
     width: 0;
     height: 0;
@@ -279,7 +279,7 @@
 
 #ctrl-container {
     cursor: pointer;
-}
+}*/
 
 
 #nav-item-2 {

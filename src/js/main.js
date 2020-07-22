@@ -3,7 +3,7 @@
 //const AudioContext = window.AudioContext || window.webkitAudioContext;
 //const audioCtx = new AudioContext();
 
-var bgMusic = document.getElementById("bgMusic"),
+/*var bgMusic = document.getElementById("bgMusic"),
     musicBtn = document.getElementById("musicBtn"),
     music = false;
 
@@ -25,7 +25,7 @@ bgMusic.onpause = function() {
     musicBtn.classList.remove("pauseBtn");
     musicBtn.classList.add("playBtn");
     music = false;
-};
+};*/
 
 //click  sound effects
 /*var clickSnd = document.getElementById("clickSnd"),

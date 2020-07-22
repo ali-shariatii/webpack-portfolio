@@ -84,7 +84,7 @@ $(document).ready(function() {
         function globalScrollAnimation() {
             //large ultrawide monitors
             if (window.matchMedia("(min-width: 1300px) and (min-aspect-ratio: 21/9)").matches) {
-
+       
                 //about section
                 if (scroll >= homeStart + homeEnd / 2) {
                     $("#about-grid-item-1 h4").addClass("left-slide-in");
@@ -138,343 +138,8 @@ $(document).ready(function() {
                     $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
                 };
 
-                //portrait smartphones
-            } else if (window.matchMedia("(min-width: 10px) and (max-width: 1399.98px) and (min-aspect-ratio: 9/20) and (max-aspect-ratio: 57/100)").matches) {
+            } else if (window.matchMedia("(min-width: 1300px)").matches) {
 
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.38) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.7) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 1.05) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 1.33) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= aboutStart + aboutEnd / 2) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * .75) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= workStart + workEnd * 0.35) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.55) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.885) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= testimonialsStart + testimonialsEnd * .2) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= testimonialsStart + testimonialsEnd * .4) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-                //landscape smartphones
-            } else if (window.matchMedia("(min-width: 10px) and (max-width: 1399.98px) and (min-aspect-ratio: 175/100) and (max-aspect-ratio: 20/9)").matches) {
-
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.35) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.77) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 1.25) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 1.5) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= aboutStart + aboutEnd * 0.7) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.9) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= workStart + workEnd * 0.6) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.73) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.83) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= testimonialsStart + testimonialsEnd * 0.65) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= testimonialsStart + testimonialsEnd * 0.86) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-                //portrait medium & small tablets
-            } else if (window.matchMedia("(min-width: 10px) and (max-width: 767.98px) and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 3/4)").matches) {
-
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.11) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.38) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.67) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.86) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= aboutStart + aboutEnd * 0.23) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.48) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= workStart + workEnd * 0.1) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.29) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.58) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= workStart + workEnd * 0.78) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= workStart + workEnd * 0.88) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-                //portrait large tablets
-            } else if (window.matchMedia("(min-width: 767.98px) and (max-width: 1399.98px) and (min-aspect-ratio: 6/10) and (max-aspect-ratio: 3/4)").matches) {
-
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.15) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.25) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.35) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.55) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= homeStart + homeEnd * 0.81) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.15) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= aboutStart + aboutEnd * 0.42) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.63) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.7) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= aboutStart + aboutEnd * 0.93) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= workStart + workEnd * 0.35) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-                //landscape medium & small tablets
-            } else if (window.matchMedia("(min-width: 10px) and (max-width: 1024.98px) and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 17/10)").matches) {
-
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.15) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.25) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.5) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.65) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= aboutStart + aboutEnd * 0.25) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.4) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= aboutStart + aboutEnd * 0.77) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.1) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= workStart + workEnd * 0.19) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= workStart + workEnd * 0.6) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= workStart + workEnd * 0.75) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-                //landscape large tablets
-            } else if (window.matchMedia("(min-width: 1025px) and (max-width: 1399.98px) and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 17/10)").matches) {
-
-                //about section
-                if (scroll >= homeStart + homeEnd * 0.2) {
-                    $("#about-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.35) {
-                    $("#highlights-grid-item-1").addClass("scale-in");
-                    $("#highlights-grid-item-2").addClass("scale-in");
-                    $("#highlights-grid-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.45) {
-                    $("#about-grid-item-3 p").addClass("appear-in");
-                };
-
-                if (scroll >= homeStart + homeEnd * 0.55) {
-                    $("#about-grid-item-4").addClass("appear-in");
-                };
-
-                //work section
-                if (scroll >= homeStart + homeEnd * 0.95) {
-                    $("#work-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.15) {
-                    $("#gallery-grid-item-1").addClass("scale-in");
-                    $("#gallery-grid-item-2").addClass("scale-in");
-                };
-
-                //testimonials section
-                if (scroll >= aboutStart + aboutEnd * 0.7) {
-                    $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.85) {
-                    $("#recom-item-1").addClass("scale-in");
-                    $("#recom-item-2").addClass("scale-in");
-                    $("#recom-item-3").addClass("scale-in");
-                };
-
-                if (scroll >= aboutStart + aboutEnd * 0.97) {
-                    $("#recom-item-4").addClass("appear-in");
-                };
-
-                //contact
-                if (scroll >= workStart + workEnd * 0.35) {
-                    $("#contact-grid-item-1 h4").addClass("left-slide-in");
-                }
-
-                if (scroll >= workStart + workEnd * 0.75) {
-                    $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
-                };
-
-            } else {
                 //about section
                 if (scroll >= homeStart + homeEnd / 2) {
                     $("#about-grid-item-1 h4").addClass("left-slide-in");
@@ -527,6 +192,27 @@ $(document).ready(function() {
                 if (scroll >= testimonialsStart + testimonialsEnd * .4) {
                     $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");
                 };
+            }else {
+                //about section
+                $("#about-grid-item-1 h4").addClass("left-slide-in");
+                $("#highlights-grid-item-1").addClass("scale-in");
+                $("#highlights-grid-item-2").addClass("scale-in");
+                $("#highlights-grid-item-3").addClass("scale-in");
+                $("#about-grid-item-3 p").addClass("appear-in");
+                $("#about-grid-item-4").addClass("appear-in");
+                //work section
+                $("#work-grid-item-1 h4").addClass("left-slide-in");
+                $("#gallery-grid-item-1").addClass("scale-in");
+                $("#gallery-grid-item-2").addClass("scale-in");
+                //testimonials section
+                $("#testimonials-grid-item-1 h4").addClass("left-slide-in");
+                $("#recom-item-1").addClass("scale-in");
+                $("#recom-item-2").addClass("scale-in");
+                $("#recom-item-3").addClass("scale-in");
+                $("#recom-item-4").addClass("appear-in");
+                //contact
+                $("#contact-grid-item-1 h4").addClass("left-slide-in");
+                $("#contact-grid-item-2").removeClass("init-scale-in").addClass("scale-in");          
             }
         };
 

@@ -30,10 +30,10 @@ module.exports = {
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
-                                enabled: false,
+                                enabled: true,
                             },
                             pngquant: {
-                                quality: [0.50, 0.50],
+                                quality: [1.0, 1.0],
                                 speed: 4
                             },
                             gifsicle: {
@@ -56,16 +56,16 @@ module.exports = {
                     }
                 }
             },
-            {
+           /*{
                 test: /\.(ogg|mp3|wav|mpe?g)$/,
                 use:  {                   
                     loader: "file-loader",
                     options: {
                         name: "[name].[hash].[ext]",
-                        outputPath: "assets/snd"
+                        outputPath: "assets/aud"
                     }
                 }
-            }
+            },*/
         ]
     }
 };
