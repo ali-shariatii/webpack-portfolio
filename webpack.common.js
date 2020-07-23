@@ -1,5 +1,4 @@
 const path = require("path");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -10,38 +9,47 @@ module.exports = {
                 use: ["html-loader"]
             },
             {
+                test: /\.ico$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: "[name].[ext]",
+                            outputPath: "./assets/img",
+                        }
+                    }
+                ]
+            },
+            {
                 test: /\.(svg|png|jpg|gif)$/i,
                 use: [
                     {
                     loader: 'file-loader',
                     options: {
-                        name: "[name].[hash].[ext]",
-                        outputPath: "assets/img",
+                        name: "[name].[contentHash].[ext]",
+                        outputPath: "./assets/img",
                     }
                     },
-                    {
+                   {
                         loader: 'image-webpack-loader',
                         options: {
                             //bypassOnDebug: true, // webpack@1.x
                             //disable: true, // webpack@2.x and newer
-                            mozjpeg: {
+                            ozjpeg: {
                                 progressive: true,
                                 quality: 50
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
-                                enabled: true,
+                                enabled: false,
                             },
                             pngquant: {
-                                quality: [1.0, 1.0],
+                                quality: [0.5, 0.5],
                                 speed: 4
                             },
                             gifsicle: {
                                 interlaced: false,
                             },
-                            webp: {
-                                quality: 60
-                            }
                         },
                     },
                 ]
@@ -51,7 +59,7 @@ module.exports = {
                 use:  {                   
                     loader: "file-loader",
                     options: {
-                        name: "[name].[hash].[ext]",
+                        name: '[name].[ext]',
                         outputPath: "assets/fonts"
                     }
                 }

@@ -9,9 +9,15 @@ module.exports = merge(common,{
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: "./src/template.html"
-  })
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/template.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'contactform.html',
+      template: './src/contactform.html'
+      }),
 ],
   module: {
     rules: [

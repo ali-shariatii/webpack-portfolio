@@ -2,23 +2,36 @@ const path = require("path");
 const common = require("./webpack.common.js");
 const { merge } = require("webpack-merge");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
+
 
 module.exports = merge(common,{
   mode: "production",
   output: {
     filename: "main.[contentHash].js",
-    path: path.resolve(__dirname, "prod")
+    path: path.resolve(__dirname, "prod"),
+    
   },
   optimization: {
     minimizer: [
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        template: "./src/template.html",
+        filename: 'index.html',
+        template: './src/template.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'contactform.html',
+        template: './src/contactform.html',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
@@ -29,6 +42,17 @@ module.exports = merge(common,{
   },
   plugins: [
     new MiniCssExtractPlugin({filename: "[name].[contentHash].css"}),
+    new HtmlCriticalWebpackPlugin({
+      base: path.resolve(__dirname, 'src'),
+      src: 'template.html',
+      dest: '../prod/index.html',
+      inline: true,
+      minify: true,
+      extract: true,
+      penthouse: {
+        blockJSRequests: false,
+      }
+    }),
     new CleanWebpackPlugin(),
   ],
   module: {
