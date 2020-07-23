@@ -1,5 +1,4 @@
-//  \_(o_o)_/
-
+import $ from 'jquery';
 
 $(document).ready(function() {
 

@@ -1,7 +1,9 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./src/index.js",
+    entry: [
+        "./src/index.js",
+    ],
     module: {
         rules: [
             {
@@ -63,6 +65,13 @@ module.exports = {
                         outputPath: "assets/fonts"
                     }
                 }
+            },
+            {
+                test: /font-awesome\.config\.js/,
+                use: [
+                  { loader: 'style-loader' },
+                  { loader: 'font-awesome-loader' }
+                ]
             },
            /*{
                 test: /\.(ogg|mp3|wav|mpe?g)$/,

@@ -1,3 +1,4 @@
+
 import './css/normalize.css';
 import './css/main.css';
 import './css/navigation.css';
@@ -10,3 +11,4 @@ import './css/small-devices.css';
 import './css/global-animation.css';
 import './js/main.js';
 import './js/jquery.js';
+

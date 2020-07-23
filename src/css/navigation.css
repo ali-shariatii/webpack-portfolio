@@ -666,8 +666,6 @@ ul li a {
 
 #nav-github:hover,
 #social-media-min a:hover,
-#nav-github:focus,
-#social-media-min a:focus,
 #nav-github:active,
 #social-media-min a:active {
     text-decoration: none;

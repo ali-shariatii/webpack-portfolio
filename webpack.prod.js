@@ -6,7 +6,7 @@ const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
+//const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 
 
 module.exports = merge(common,{
@@ -42,7 +42,7 @@ module.exports = merge(common,{
   },
   plugins: [
     new MiniCssExtractPlugin({filename: "[name].[contentHash].css"}),
-    new HtmlCriticalWebpackPlugin({
+    /*new HtmlCriticalWebpackPlugin({
       base: path.resolve(__dirname, 'src'),
       src: 'template.html',
       dest: '../prod/index.html',
@@ -52,7 +52,7 @@ module.exports = merge(common,{
       penthouse: {
         blockJSRequests: false,
       }
-    }),
+    }),*/
     new CleanWebpackPlugin(),
   ],
   module: {
