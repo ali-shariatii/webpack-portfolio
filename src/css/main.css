@@ -141,6 +141,9 @@ h4 {
     background-color: transparent;
 }
 
+.icon-github:before {
+    content: "\e900";
+  }
 
 /*										 SECTION 1: HOME / LANDING PAGE */
 

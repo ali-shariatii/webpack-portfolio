@@ -1,6 +1,7 @@
 
 import './css/normalize.css';
 import './css/main.css';
+import './css/font-awesome.css';
 import './css/navigation.css';
 import './css/about.css';
 import './css/work.css';

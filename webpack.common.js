@@ -39,14 +39,14 @@ module.exports = {
                             //disable: true, // webpack@2.x and newer
                             ozjpeg: {
                                 progressive: true,
-                                quality: 50
+                                quality: 10
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
                                 enabled: false,
                             },
                             pngquant: {
-                                quality: [0.5, 0.5],
+                                quality: [0.1, 0.1],
                                 speed: 4
                             },
                             gifsicle: {

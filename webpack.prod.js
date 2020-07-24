@@ -8,7 +8,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 //const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 
-
 module.exports = merge(common,{
   mode: "production",
   output: {
@@ -21,22 +20,22 @@ module.exports = merge(common,{
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        filename: 'index.html',
+        filename: 'index.php',
         template: './src/template.html',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
-        }
+        },
       }),
       new HtmlWebpackPlugin({
-        filename: 'contactform.html',
+        filename: 'contactform.php',
         template: './src/contactform.html',
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
           removeComments: true
-        }
+        },
       })
     ]
   },
