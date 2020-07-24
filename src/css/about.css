@@ -64,7 +64,7 @@
   
   #about-grid-item-4 {
       display: grid;
-      grid-template-columns: repeat(3, 20%);
+      grid-template-columns: repeat(4, 15%);
       grid-auto-columns: 20%;
       justify-content: center;
       grid-template-rows: repeat(3, auto);
@@ -82,9 +82,32 @@
       -ms-transition: all .3s ease;
       -o-transition: all .3s ease;
       transition: all .3s ease;
+
   }
   /*hover transitions*/
   
+  .active-si:hover,
+  .active-si:focus {
+      letter-spacing: .076rem;
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      transform: scale(1.03);
+  }
+  
+  .active-si:hover span,
+  .active-si:focus span {
+      color: #1676b6;
+      cursor: auto;
+  }
+  
+  .deactive-si span,
+  .deactive-si span {
+      cursor: wait;
+      color: rgb(82, 82, 82);
+  }
+
   #highlight-content-container-1:hover,
   #highlight-content-container-2:hover,
   #highlight-content-container-3:hover,
@@ -98,17 +121,3 @@
       transform: scale(1.02);
   }
   
-  .skills-items:hover,
-  .skills-items:focus {
-      letter-spacing: .076rem;
-      -webkit-transform: scale(1.03);
-      -moz-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-      -o-transform: scale(1.03);
-      transform: scale(1.03);
-  }
-  
-  .skills-items:hover span,
-  .skills-items:focus span {
-      color: #1676b6;
-  }
