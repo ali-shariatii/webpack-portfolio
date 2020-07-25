@@ -10,6 +10,13 @@ import './css/work.css';
 import './css/contact.css';
 import './css/small-devices.css';
 import './css/global-animation.css';
-import './js/main.js';
-import './js/jquery.js';
+
+import ( /* webpackChunkName: 'landingPageViewport'*/ './js/landingPageViewport.js');
+import ( /* webpackChunkName: 'navOnScrollAnimation'*/ './js/navOnScrollAnimation.js');
+import ( /* webpackChunkName: 'windowOnScrollAnimation'*/ './js/windowOnScrollAnimation.js');
+import ( /* webpackChunkName: 'hamburgerMenu'*/ './js/hamburgerMenu.js');
+import ( /* webpackChunkName: 'globalOnClickAnimation'*/ './js/globalOnClickAnimation.js');
+import ( /* webpackChunkName: 'modal'*/ './js/modal.js');
+import ( /* webpackChunkName: 'star'*/ './js/star.js');
+
 
