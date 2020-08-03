@@ -94,8 +94,11 @@ h4 {
     transition: all .3s ease;
 }
 
-#media-container:hover,
-#media-container:focus {
+.hide {
+    display: none;
+}
+
+#media-container:hover {
     left: 0;
 }
 
