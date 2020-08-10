@@ -608,14 +608,15 @@ footer {
     margin-top: 2.6rem;
 }
 
-#footer-grid-item-1 p {
+#footer-grid-item-1 address {
+    font-style: normal;
     text-align: center;
     font-size: .8rem;
     word-spacing: .2rem;
     letter-spacing: .008rem;
 }
 
-#footer-grid-item-1 p a {
+#footer-grid-item-1 address a {
     text-decoration: none;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
@@ -624,15 +625,15 @@ footer {
     transition: all .4s ease;
 }
 
-#footer-grid-item-1 p a,
-#footer-grid-item-1 p a:active,
-#footer-grid-item-1 p a:visited {
+#footer-grid-item-1 address a,
+#footer-grid-item-1 address a:active,
+#footer-grid-item-1 address a:visited {
     text-decoration: none;
     color: white;
 }
 
-#footer-grid-item-1 p a:hover,
-#footer-grid-item-1 p a:focus {
+#footer-grid-item-1 address a:hover,
+#footer-grid-item-1 address a:focus {
     text-decoration: none;
     color: #1676b6;
 }
