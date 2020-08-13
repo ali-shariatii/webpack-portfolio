@@ -12,7 +12,7 @@
     </script>
 
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="3500;URL='https://alishariatii.com/'" />
+    <meta http-equiv="refresh" content="3.5;URL='https://alishariatii.com/'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
@@ -29,8 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST['name']);
     $phone = test_input($_POST['phone']);
     $email = test_input($_POST['email']);
-    $name = test_input($_POST['subject']);
-    $name = test_input($_POST['message']);
+    $subject = test_input($_POST['subject']);
+    $message = test_input($_POST['message']);
     
     $mailTo = "info@alishariatii.com";
     $headers = "From: ".$email;

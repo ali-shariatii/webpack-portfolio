@@ -263,6 +263,12 @@ $(document).ready(function() {
     /* SECTION 4: TESTIMONIALS */
 
     /* SECTION 5: CONTACT */
-
+    $("select").change(function(){
+        if ($(this).val() == "") {
+            $(this).css('color', '#5f5f5f')
+        } else {
+            $(this).css('color', 'white')
+        }
+    });
 
 });

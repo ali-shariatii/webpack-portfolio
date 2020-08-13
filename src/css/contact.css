@@ -84,10 +84,22 @@
     border: none;
 }
 
+#form-grid select {
+    background-color: #393939;
+    color: grey;
+    border: none; 
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    cursor: pointer;
+}
+
 #form-grid textarea,
-#form-grid input {
+#form-grid input,
+#form-grid select {
     padding: .8rem .76rem;
 }
+
 
 #form-grid-item-1,
 #form-grid-item-2,
@@ -95,6 +107,11 @@
 #form-grid-item-4 {
     display: grid;
     align-content: stretch;
+}
+
+#form-grid-item-4 {
+    overflow-x: hidden;
+    position: relative;
 }
 
 #form-grid-item-5 {
