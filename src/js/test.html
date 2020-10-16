@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <form id="passForm">
+    <label>(8-12 characters, min 1 number, no spaces)</label><br><br>
+    <input type="text" id="pass">
+    <input type="submit" value="submit">
+  </form>
+  <p id="alarm"></p>
+    
+  <script>
+  var pass = document.getElementById("pass");
+  //var alarm = document.getElementById(alarm);
+  var passForm = document.getElementById("passForm");
+  passForm.onsubmit = passValidator(pass);
+
+function passValidator(pass) {
+  try {
+    var success = true;
+
+    if (pass.value.length === 0) {
+      throw "The password input must contain something!";
+      pass.value.focus();
+      success = false;
+      return false;
+    }
+
+    for (var i = 0; i < pass.value.length; i++) {
+      if (pass.value.indexOf(" ") !== -1) {
+        throw "Do not include spaces.";
+        pass.value.focus();
+        success = false;
+        return false;
+      }
+    }
+
+    if (pass.value.length < 8 || pass.value.length > 12) {
+      throw "Enter 8-12 characters.";
+      pass.value.focus();
+      success = false;
+      return false;
+    }
+
+    var isNumber = false;
+    for (var i = 0; i < pass.value.length; i++) {
+      if (isNaN(pass.value[i]) === false) {
+        isNumber = true;
+        break;
+      }
+    }
+
+    if (isNumber == false) {
+      throw "include at least 1 number.";
+      success = false;
+    }
+
+    if (success === true) {
+      throw "Thanks for the input";
+    }
+
+  }
+  catch(result) {
+    alert (result);
+  }
+} 
+</script>
+</body>
+</html>
